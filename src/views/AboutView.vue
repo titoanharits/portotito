@@ -3,15 +3,14 @@ import { ref } from 'vue';
 import data from '../data.json';
 import { EnvelopeIcon, ArrowTopRightOnSquareIcon, ChevronDownIcon } from '@heroicons/vue/24/outline';
 
-// State untuk melacak item Work Exp mana yang sedang terbuka
+
 const activeAccordion = ref(null);
 
-// Fungsi untuk toggle accordion
 const toggleAccordion = (index) => {
   if (activeAccordion.value === index) {
-    activeAccordion.value = null; // Tutup jika diklik lagi
+    activeAccordion.value = null;
   } else {
-    activeAccordion.value = index; // Buka yang diklik
+    activeAccordion.value = index;
   }
 };
 </script>
@@ -19,14 +18,14 @@ const toggleAccordion = (index) => {
 <template>
   <div class="min-h-screen pt-28 pb-20 px-6 lg:px-12 max-w-7xl mx-auto">
     
-    <h1 class="text-5xl md:text-7xl font-black uppercase mb-12 shadow-[4px_4px_0px_0px_#A3E635] inline-block bg-white border-4 border-black px-4">
+    <h1 class="text-5xl md:text-5xl font-black text-white uppercase mb-12 shadow-[4px_4px_0px_0px_black] inline-block bg-[#4D6BFF] border-4 border-black px-4">
       About Me
     </h1>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       
-      <div class="lg:col-span-4 bg-[#E0E7FF] border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] top-28">
-        <h2 class="text-3xl font-black mb-6 uppercase border-b-4 border-black pb-2">Profile</h2>
+      <div class="lg:col-span-4 bg-[#F6F1E8] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#000] top-28">
+        <h2 class="text-3xl font-black mb-6 uppercase border-b-4 border-black pb-2">ANHARITS PANTITO</h2>
         
         <div class="text-lg font-bold font-mono leading-relaxed mb-8">
             <p v-for="(paragraph, index) in data.profile.about_me" 
@@ -39,15 +38,33 @@ const toggleAccordion = (index) => {
         <div>
           <h3 class="text-xl font-black mb-4 uppercase">Contact</h3>
           <div class="flex gap-3">
-            <a :href="'mailto:' + data.profile.email" class="w-12 h-12 bg-[#FF6B6B] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none">
-              <EnvelopeIcon class="w-6 h-6" />
-            </a>
-            <a href="{{ data.profile.linkedin }}" class="w-12 h-12 bg-[#4ECDC4] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none">
-              <span class="font-black text-lg">in</span>
-            </a>
-             <a href="{{ data.profile.github }}" class="w-12 h-12 bg-[#FFE66D] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none">
-              <span class="font-black text-lg">Gh</span>
-            </a>
+            <a 
+							:href="data.profile.linkedin" 
+							target="_blank" 
+							rel="noopener noreferrer"
+							class="w-12 h-12 bg-[#00b63d] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
+							title="LinkedIn"
+						>
+							<span class="font-black text-lg">wa</span>
+						</a>
+						<a 
+							:href="data.profile.linkedin" 
+							target="_blank" 
+							rel="noopener noreferrer"
+							class="w-12 h-12 bg-[#3aa0ff] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
+							title="LinkedIn"
+						>
+							<span class="font-black text-lg">in</span>
+						</a>
+            <a 
+							:href="data.profile.github" 
+							target="_blank" 
+							rel="noopener noreferrer"
+							class="w-12 h-12 bg-[#f2f535] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
+							title="LinkedIn"
+						>
+							<span class="font-black text-lg">git</span>
+						</a>
           </div>
         </div>
       </div>
@@ -73,7 +90,7 @@ const toggleAccordion = (index) => {
 								style="filter: drop-shadow(5px 5px 0px #000);"
 							>
 							
-							<span class="font-bold font-mono text-xs uppercase bg-white border-2 border-black px-2 py-0.5 shadow-[3px_3px_0px_0px_#000] group-hover:shadow-none group-hover:translate-x-[3px] group-hover:translate-y-[3px] transition-all">
+							<span class="font-bold font-mono text-xs uppercase bg-[#F6F1E8] border-2 border-black px-2 py-0.5 shadow-[3px_3px_0px_0px_#000] group-hover:shadow-none group-hover:translate-x-0.75 group-hover:translate-y-0.75 transition-all">
 								{{ skill.name }}
 							</span>
 						</div>
@@ -89,7 +106,7 @@ const toggleAccordion = (index) => {
             <div 
               v-for="(job, index) in data.experience" 
               :key="index"
-              class="border-4 border-black bg-white shadow-[8px_8px_0px_0px_#000] transition-all"
+              class="border-4 border-black bg-[#F6F1E8] shadow-[6px_6px_0px_0px_#000] transition-all"
             >
               <button 
                 @click="toggleAccordion(index)"
@@ -97,11 +114,12 @@ const toggleAccordion = (index) => {
               >
                 <div>
                   <h3 class="text-xl md:text-2xl font-black uppercase">{{ job.role }}</h3>
-                  <p class="text-sm font-bold font-mono text-gray-600 mt-1">{{ job.company }} | {{ job.period }}</p>
+                  <p class="text-sm font-bold font-mono text-gray-600 mt-1">{{ job.company }}</p>
+									<p class="text-sm font-bold font-mono text-gray-600 mt-1">{{ job.period }}</p>
                 </div>
                 <ChevronDownIcon 
                   class="w-8 h-8 border-2 border-black rounded-full p-1 transition-transform duration-300"
-                  :class="activeAccordion === index ? 'rotate-180 bg-black text-white' : 'bg-white text-black'"
+                  :class="activeAccordion === index ? 'rotate-180 bg-black text-white' : 'bg-[#FFD400] text-black'"
                 />
               </button>
 
