@@ -1,0 +1,81 @@
+{
+  "profile": {
+    "name": "Anharits Pantito",
+    "role": "Website Developer",
+    "description": "Website developer with 3+ years of Ruby on Rails experience. Currently exploring the Vue.js ecosystem.",
+    "email": "anharitspantito@email.com",
+    "github": "https://github.com/",
+    "linkedin": "https://linkedin.com/titoanharits",
+    "image": "/public/fotoporto.png",
+    "about_me": [
+      "I’m a software developer with 3+ years of experience working mostly on the backend using Ruby on Rails—building APIs, shaping databases, and turning business requirements into things that actually work.",
+      "Lately, I’ve been moving closer to the frontend. Not because backend isn’t fun, but because great logic deserves a great interface. I enjoy translating complex systems into clean, intuitive user experiences, and that curiosity has pulled me deep into the Vue.js ecosystem."
+    ]
+  },
+
+  "experience": [
+    {
+      "role": "Website Developer",
+      "company": "PT. Pita Pos Indonesia",
+      "period": "Jan 2022 - Aug 2025",
+      "desc": [
+        "Developed and maintained multiple internal web systems using Ruby on Rails.",
+        "Designed and consumed API to facilitate seamless data synchronization.",
+        "Collaborated with cross-functional teams to translate business requirements into features."
+      ]
+    },
+    {
+      "role": "UI/UX Designer (Intern)",
+      "company": "Kode Koding",
+      "period": "Sep 2020 - Feb 2021",
+      "desc": [
+        "Designed user flows and wireframes to visualize application structure.",
+        "Created high-fidelity mockups and prototypes using Figma."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Employee Performance System",
+      "role": "Fullstack Developer",
+      "tech": ["Ruby on Rails", "Tailwind CSS", "JS", "MySQL"],
+      "points": [
+        "Developed a comprehensive dashboard for tracking employee KPIs.",
+        "Integrated JS libraries for interactive scoring forms and dynamic charts.",
+        "Implemented complex scoring algorithms on the backend."
+      ]
+    },
+    {
+      "title": "Online Shop Platform",
+      "role": "Fullstack Developer",
+      "tech": ["Ruby on Rails", "Tailwind CSS", "StimulusJS"],
+      "points": [
+        "Built a mobile-first product catalog focusing on transactional integrity.",
+        "Customized UI components for product cards and checkout flows.",
+        "Enhanced UX with JS interactions for cart and filtering without page reloads."
+      ]
+    },
+    {
+      "title": "Personal Portfolio Website",
+      "role": "Frontend Developer",
+      "tech": ["VueJS", "Tailwind CSS"],
+      "points": [
+        "Designed reactive personal portfolio to showcase professional projects.",
+        "Built modular UI components (Navbar, Cards) using Vue.js.",
+        "Utilized Vue Router for smooth client-side navigation (SPA)."
+      ]
+    }
+  ],
+
+  "skills": [
+    { "name": "Vue.js", "logo": "https://skillicons.dev/icons?i=vue" },
+    { "name": "JavaScript", "logo": "https://skillicons.dev/icons?i=js" },
+    { "name": "Tailwind", "logo": "https://skillicons.dev/icons?i=tailwind" },
+    { "name": "ROR", "logo": "https://skillicons.dev/icons?i=rails" },
+    { "name": "MySQL", "logo": "https://skillicons.dev/icons?i=mysql" },
+    { "name": "Git", "logo": "https://skillicons.dev/icons?i=git" },
+    { "name": "API", "logo": "https://skillicons.dev/icons?i=postman" },
+    { "name": "Figma", "logo": "https://skillicons.dev/icons?i=figma" }
+  ]
+}
