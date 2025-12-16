@@ -4,9 +4,9 @@
     "role": "Website Developer",
     "description": "Website developer with 3+ years of Ruby on Rails experience. Currently exploring the Vue.js ecosystem.",
     "email": "anharitspantito@email.com",
-    "github": "https://github.com/",
+    "github": "https://github.com/titoanharits",
     "linkedin": "https://linkedin.com/titoanharits",
-    "image": "/public/fotoporto.png",
+    "image": "/fotoporto.png",
     "about_me": [
       "I’m a software developer with 3+ years of experience working mostly on the backend using Ruby on Rails—building APIs, shaping databases, and turning business requirements into things that actually work.",
       "Lately, I’ve been moving closer to the frontend. Not because backend isn’t fun, but because great logic deserves a great interface. I enjoy translating complex systems into clean, intuitive user experiences, and that curiosity has pulled me deep into the Vue.js ecosystem."
