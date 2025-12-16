@@ -1,12 +1,5 @@
 <script setup>
-import { ref } from 'vue';
 import Navbar from './components/Navbar.vue';
-import { useScrollNavigation } from './composables/useScrollNavigation';
-
-const pages = ['home', 'about', 'projects'];
-const pageContainer = ref(null);
-
-const { transitionName } = useScrollNavigation(pages, pageContainer);
 </script>
 
 <template>
@@ -16,12 +9,8 @@ const { transitionName } = useScrollNavigation(pages, pageContainer);
     <Navbar />
     
     <router-view v-slot="{ Component }">
-      <transition name="transitionName" mode="out-in">
-        <component
-          :is="Component"
-          ref="pageContainer"
-          class="h-full w-full overflow-y-auto scroll-smooth" 
-        />
+      <transition name="fade" mode="out-in">
+        <component :is="Component" class="pb-24 md:pb-0" />
       </transition>
     </router-view>
   </div>

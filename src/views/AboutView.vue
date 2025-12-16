@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import data from '../data.json';
-import { EnvelopeIcon, ArrowTopRightOnSquareIcon, ChevronDownIcon } from '@heroicons/vue/24/outline';
+import { ChevronDownIcon } from '@heroicons/vue/24/outline';
 
 
 const activeAccordion = ref(null);
@@ -18,8 +18,8 @@ const toggleAccordion = (index) => {
 <template>
   <div class="min-h-screen pt-28 pb-20 px-6 lg:px-12 max-w-7xl mx-auto">
     
-    <h1 class="text-5xl md:text-5xl font-black text-white uppercase mb-12 shadow-[4px_4px_0px_0px_black] inline-block bg-[#4D6BFF] border-4 border-black px-4">
-      About Me
+    <h1 class="text-5xl md:text-5xl font-black text-white mb-12 shadow-[4px_4px_0px_0px_black] inline-block bg-[#4D6BFF] border-4 border-black px-4">
+      #aboutMe
     </h1>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

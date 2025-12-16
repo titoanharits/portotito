@@ -38,9 +38,12 @@
 
   "projects": [
     {
-      "title": "Employee Performance System",
+      "title": "Deles",
+      "project_type": "Employee Performance System",
       "role": "Fullstack Developer",
-      "tech": ["Ruby on Rails", "Tailwind CSS", "JS", "MySQL"],
+      "tech": ["Ruby on Rails", "Tailwind CSS", "StimulusJS", "MySQL"],
+      "link": "https://kpi.deles.id",
+      "image": "/projects/deles.png",
       "points": [
         "Developed a comprehensive dashboard for tracking employee KPIs.",
         "Integrated JS libraries for interactive scoring forms and dynamic charts.",
@@ -48,9 +51,12 @@
       ]
     },
     {
-      "title": "Online Shop Platform",
+      "title": "Pick A Boo",
+      "project_type": "Online Shop",
       "role": "Fullstack Developer",
-      "tech": ["Ruby on Rails", "Tailwind CSS", "StimulusJS"],
+      "tech": ["Ruby on Rails", "Tailwind CSS", "StimulusJS", "MySQL"],
+      "link": "https://pickaboo.titoanharits.my.id",
+      "image": "/projects/pab.png",
       "points": [
         "Built a mobile-first product catalog focusing on transactional integrity.",
         "Customized UI components for product cards and checkout flows.",
@@ -58,9 +64,38 @@
       ]
     },
     {
-      "title": "Personal Portfolio Website",
+      "title": "titoanharits.my.id",
+      "project_type": "Portofolio Website",
       "role": "Frontend Developer",
       "tech": ["VueJS", "Tailwind CSS"],
+      "link": "https://titoanharits.my.id",
+      "image": "/projects/porto.png",
+      "points": [
+        "Designed reactive personal portfolio to showcase professional projects.",
+        "Built modular UI components (Navbar, Cards) using Vue.js.",
+        "Utilized Vue Router for smooth client-side navigation (SPA)."
+      ]
+    },
+    {
+      "title": "Mangoon",
+      "project_type": "Company Profile",
+      "role": "Fullstack Developer",
+      "tech": ["Ruby on Rails", "Bootstrap", "Javascript", "MySQL"],
+      "link": "https://mangoon.id",
+      "image": "/projects/mangoon.png",
+      "points": [
+        "Designed reactive personal portfolio to showcase professional projects.",
+        "Built modular UI components (Navbar, Cards) using Vue.js.",
+        "Utilized Vue Router for smooth client-side navigation (SPA)."
+      ]
+    },
+    {
+      "title": "KPSP Setiakawan",
+      "project_type": "Milk Transaction System",
+      "role": "Fullstack Developer",
+      "tech": ["Ruby on Rails", "Bootstrap", "Javascript", "MySQL"],
+      "link": "https://setiakawan.pitapos.com",
+      "image": "/projects/sk.png",
       "points": [
         "Designed reactive personal portfolio to showcase professional projects.",
         "Built modular UI components (Navbar, Cards) using Vue.js.",
