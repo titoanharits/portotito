@@ -1,10 +1,10 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <div class="font-mono text-black bg-[#C9C4E3] min-h-screen selection:bg-black selection:text-[#FFDEE9]">
-    <div class="fixed inset-0 bg-[#E0E7FF] -z-10 opacity-50" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px;"></div>
+  <div class="font-mono text-black bg-[#E0E7FF] min-h-screen selection:bg-black selection:text-[#FFDEE9]">
 
     <Navbar />
     
@@ -13,6 +13,9 @@ import Navbar from './components/Navbar.vue';
         <component :is="Component" class="pb-24 md:pb-0" />
       </transition>
     </router-view>
+
+    <Footer />
+
   </div>
 </template>
 

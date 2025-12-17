@@ -36,35 +36,10 @@ const toggleAccordion = (index) => {
         </div>
 
         <div>
-          <h3 class="text-xl font-black mb-4 uppercase">Contact</h3>
           <div class="flex gap-3">
-            <a 
-							:href="data.profile.linkedin" 
-							target="_blank" 
-							rel="noopener noreferrer"
-							class="w-12 h-12 bg-[#00b63d] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
-							title="LinkedIn"
-						>
-							<span class="font-black text-lg">wa</span>
-						</a>
-						<a 
-							:href="data.profile.linkedin" 
-							target="_blank" 
-							rel="noopener noreferrer"
-							class="w-12 h-12 bg-[#3aa0ff] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
-							title="LinkedIn"
-						>
-							<span class="font-black text-lg">in</span>
-						</a>
-            <a 
-							:href="data.profile.github" 
-							target="_blank" 
-							rel="noopener noreferrer"
-							class="w-12 h-12 bg-[#f2f535] border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:shadow-none"
-							title="LinkedIn"
-						>
-							<span class="font-black text-lg">git</span>
-						</a>
+            <router-link to="/projects" class="px-5 py-2 bg-[#FFD400] border-4 border-black text-xl font-black uppercase shadow-[4px_4px_0px_0px_#000] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+              stuff i built ->
+            </router-link>
           </div>
         </div>
       </div>
